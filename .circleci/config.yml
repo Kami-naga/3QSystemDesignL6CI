@@ -3,7 +3,9 @@ orbs:
   node: circleci/node@3.0.0
 
 jobs:
-  save-artifacts:
+  saveArtifacts:
+    docker:
+      - image: cimg/base:stable
     steps:
       - checkout
       - store_artifacts:
