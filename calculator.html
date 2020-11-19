@@ -1,0 +1,65 @@
+<!--/**-->
+<!--* homework1-->
+<!--* 電卓実現-->
+<!--* Author：Yuji Kaminaga-->
+<!--* Student ID：20M38050-->
+<!--* Date： 2020.10-->
+<!--*/-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./calculate.js"></script>
+    <script src="./buttonFunctions.js"></script>
+    <link rel="stylesheet" type="text/css" href="./calculator.css">
+</head>
+<body >
+<div class="div">
+    <h3 id="t">Mini Calculator</h3>
+    <input id="input" type="text" disabled="disabled">
+    <br>
+    <br>
+    <input id="output" type="text" disabled="disabled">
+    <p id="memory" style=" text-align:left;padding-left: 20px;font-size: 12px;">Memory: 0</p>
+    <table border="0" style="margin-top:0;boarder-top:0px;">
+        <tr>
+            <td><button class="btn" type="button" onclick="getMemory()" >M</button></td>
+            <td><button class="btn" type="button" onclick="getRead()">R</button></td>
+            <td><button class="btn" type="button" onclick="getLParentheses()">(</button></td>
+            <td><button class="btn" type="button" onclick="getRParentheses()">)</button></td>
+            <td><button class="btn" type="button" onclick="getDivide()">/</button></td>
+        </tr>
+        <tr>
+            <td><button class="btn" type="button" onclick="get7()" >7</button></td>
+            <td><button class="btn" type="button" onclick="get8()">8</button></td>
+            <td><button class="btn" type="button" onclick="get9()">9</button></td>
+            <td><button class="btn" type="button" onclick="getPower()">^</button></td>
+            <td><button class="btn" type="button" onclick="getTimes()">*</button></td>
+        </tr>
+        <tr>
+            <td><button class="btn" type="button" onclick="get4()" >4</button></td>
+            <td><button class="btn" type="button" onclick="get5()">5</button></td>
+            <td><button class="btn" type="button" onclick="get6()">6</button></td>
+            <td><button class="btn" type="button" onclick="getFactorial()">!</button></td>
+            <td><button class="btn" type="button" onclick="getMinus()">-</button></td>
+        </tr>
+        <tr>
+            <td><button class="btn" type="button" onclick="get1()" >1</button></td>
+            <td><button class="btn" type="button" onclick="get2()">2</button></td>
+            <td><button class="btn" type="button" onclick="get3 ()">3</button></td>
+            <td><button class="btn" type="button" onclick="getMod()">%</button></td>
+            <td><button class="btn" type="button" onclick="getPlus()">+</button></td>
+        </tr>
+        <tr>
+            <td><button class="btn" type="button" onclick="get0()" >0</button></td>
+            <td><button class="btn" type="button" onclick="deletion()">del</button></td>
+            <td><button class="btn" type="button" onclick="clearAll()">C</button></td>
+            <td><button class="btn" type="button" onclick="getPoint()">.</button></td>
+            <td><button class="btn" type="button" onclick="equal()">=</button></td>
+        </tr>
+    </table>
+
+</div>
+</body>
+</html>

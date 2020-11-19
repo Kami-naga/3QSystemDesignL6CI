@@ -1,0 +1,29 @@
+/**
+ * homework1
+ * 電卓実現
+ * Author：Yuji Kaminaga
+ * Student ID：20M38050
+ * Date： 2020.10
+ */
+.btn{
+    width:50px;
+    height:30px;
+}
+.div{
+    text-align:center;
+    margin:0 auto;
+    width:380px;
+    height:380px;
+    border:1px solid;
+}
+
+div input{
+    text-align: center;
+    padding:5px 5px;
+    width:300px;
+    height:20px;
+}
+
+div table{
+    margin: auto;
+}
