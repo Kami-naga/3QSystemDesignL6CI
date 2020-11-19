@@ -1,0 +1,26 @@
+{
+  "name": "ci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "TDDCalculate.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kami-naga/3QSystemDesignL6CI.git"
+  },
+  "author": "kaminaga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kami-naga/3QSystemDesignL6CI/issues"
+  },
+  "homepage": "https://github.com/Kami-naga/3QSystemDesignL6CI#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1"
+  }
+}
