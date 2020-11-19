@@ -1,6 +1,13 @@
 version: 2.1
 orbs:
   node: circleci/node@3.0.0
+jobs:
+  build:
+    working_directory: /tmp
+    steps:
+      - store_artifacts:
+          path: /tmp/TDDCalculate.js
+          destination: artifact-file
 workflows:
   node-tests:
     jobs:
