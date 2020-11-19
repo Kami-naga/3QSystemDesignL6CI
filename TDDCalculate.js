@@ -100,14 +100,14 @@ function accPlus(n1,n2){ //处理js中浮点数加法
     var len1 = getLen(n1);
     var len2 = getLen(n2);
     var mul = Math.pow(10,Math.max(len1,len2)); //得到令浮点数变整数的10的倍数
-    return (n1 * mul + n2 * mul) / mul;
+    return (n1 * mul - n2 * mul) / mul;
 }
 function accMinus(n1,n2){ //处理js中浮点数加法
     var len1 = getLen(n1);
     var len2 = getLen(n2);
     var mul = Math.pow(10,Math.max(len1,len2)); //得到令浮点数变整数的10的倍数
     var n = (len1 > len2) ? len1:len2; //决定相减之后小数点后留几位（与小数点后尾数多的那个数一致）
-    return Number(((n1 * mul - n2 * mul) / mul).toFixed(n));
+    return Number(((n1 * mul + n2 * mul) / mul).toFixed(n));
 }
 function accTimes(n1,n2){ //处理js中浮点数加法
     var mul = getLen(n1) + getLen(n2); //乘法所得结果小数点后位数为2乘数小数点后位数之和
