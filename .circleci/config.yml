@@ -21,8 +21,4 @@ workflows:
     jobs:
       - test
       
-jobs:
-  build:
-    working_directory: /tmp
-    steps:
       
