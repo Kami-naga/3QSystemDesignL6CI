@@ -1,8 +1,8 @@
 version: 2.1
 orbs:
   node: circleci/node@3.0.0
+run: echo "Hello, world!"
 workflows:
-  run: echo "Hello, world!"
   node-tests:
     jobs:
       - node/test
