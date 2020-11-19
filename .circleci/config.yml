@@ -1,21 +1,9 @@
 version: 2.1
 orbs:
   node: circleci/node@3.0.0
-
-jobs:
-  saveArtifacts:
-    docker:
-      - image: cimg/base:stable
-    steps:
-      - checkout
-      - store_artifacts:
-          path: ./TDDCalculate.js
-          destination: artifact-file
-
 workflows:
   node-tests:
     jobs:
       - node/test
-      - save-artifacts
       
       
